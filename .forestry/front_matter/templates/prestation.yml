@@ -1,4 +1,24 @@
 ---
 label: Prestation
 hide_body: true
-fields: []
+fields:
+- name: prestationTitle
+  type: text
+  config:
+    required: true
+  label: Nom de la prestation
+- name: prestationPrice
+  type: text
+  config:
+    required: true
+  label: Prix de la prestation
+- name: prestationDescription
+  type: text
+  config:
+    required: true
+  label: Description de la prestation
+- name: prestationPreview
+  type: file
+  config:
+    maxSize: 1
+  label: Vignette de la prestation
