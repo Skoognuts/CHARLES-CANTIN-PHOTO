@@ -25,6 +25,7 @@ fields:
 pages:
 - src/content/prestations/famille.md
 - src/content/prestations/il-etait-une-fois.md
+- src/content/prestations/j-immortalise-l-evenement.md
 - src/content/prestations/juste-moi.md
 - src/content/prestations/mon-bebe.md
 - src/content/prestations/pour-deux.md
