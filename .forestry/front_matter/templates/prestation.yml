@@ -23,9 +23,4 @@ fields:
     maxSize: 1
   label: Vignette de la prestation
 pages:
-- public/content/prestations/famille.md
-- public/content/prestations/il-etait-une-fois.md
-- public/content/prestations/j-immortalise-l-evenement.md
-- public/content/prestations/juste-moi.md
-- public/content/prestations/mon-bebe.md
-- public/content/prestations/pour-deux.md
+- src/content/prestations/juste-moi.md
