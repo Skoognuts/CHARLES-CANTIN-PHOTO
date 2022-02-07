@@ -24,3 +24,4 @@ fields:
   label: Vignette de la prestation
 pages:
 - public/content/prestations/juste-moi.md
+- public/content/prestations/pour-deux.md
