@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap');
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background: #23272a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+a,
+.nav-link {
+  color: #ffffff;
+}
+
+a:hover,
+.nav-link:hover,
+.nav-link:active {
+  color: #7289da;
+}
+
+h1 {
+  text-shadow: 0 0 10px #ffffff;
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
+  font-size: 13px;
+  background: rgba(35, 39, 42, 0.65);
+  box-shadow: 0 0 10px rgb(35, 39, 42);
+}
+
+footer p {
+  margin: 0;
+}
+
+.social {
+  width: 40px;
+  transition-duration: 0.25s;
+}
+
+.social:hover {
+  filter: brightness(1.2);
+}
