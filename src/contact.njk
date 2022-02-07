@@ -1,0 +1,43 @@
+---
+title: CONTACT
+description: Description des Contacts
+layout: layout.njk
+style: /css/contact.css
+---
+
+<main id="contact-content">
+  {% include 'navbar.njk' %}
+  <h1>{{title}}</h1>
+  <p>Pour de plus amples informations ou pour toute demande de devis, merci de remplir ce formulaire.</p>
+  <form class="form" name="contact" method="POST" data-netlify="true">
+    <div class="form-wrapper-inline">
+      <label for="name">Votre nom : </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-wrapper-inline">
+      <label for="surname">Votre prénom : </label>
+      <input type="text" name="surname" id="surname" required>
+    </div>
+    <div class="form-wrapper-inline">
+      <label for="email">Votre e-mail : </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-wrapper-inline">
+      <label for="phone">Votre téléphone : </label>
+      <input type="tel" name="phone" id="phone" required>
+    </div>
+    <label id="message-label" for="message">Votre message : </label>
+    <textarea name="message" id="message" rows="6" required></textarea>
+    <button type="submit">Envoyer</button>
+    
+    <address>
+      <h2>Charles Cantin | Photographe :</h2>
+      <ul>
+        <li>Adresse : 56 Avenue de l'Argentique, 33000 Bordeaux</li>
+        <li>Tel : <a href="tel:+33676759204">06.76.75.92.04</a></li>
+        <li>E-mail : <a href="mailto:j.labatut33127@gmail.com">charlescantin-photo@gmail.com</a></li>
+      </ul>
+    </address>
+  </form>
+  {% include 'footer.njk' %}
+</main>
