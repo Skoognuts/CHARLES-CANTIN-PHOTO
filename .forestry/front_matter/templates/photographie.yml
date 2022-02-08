@@ -27,6 +27,7 @@ fields:
     maxSize: 1
   label: Photographie
 pages:
+- src/content/photographies/bebe_01.md
 - src/content/photographies/famille_01.md
 - src/content/photographies/grossesse_01.md
 - src/content/photographies/mariage_01.md
