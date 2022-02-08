@@ -6,6 +6,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("./src/content/prestations/*.md");
   })
 
+  eleventyConfig.addCollection("photographies", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("./src/content/photographies/*.md");
+  })
+
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/assets");
 

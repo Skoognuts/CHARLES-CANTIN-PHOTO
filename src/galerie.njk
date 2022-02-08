@@ -3,10 +3,24 @@ title: GALERIE
 description: Description de la Galerie
 layout: layout.njk
 style: /css/galerie.css
+script: /css/galerie.js
 ---
 
 <main id="galerie-content">
   {% include 'navbar.njk' %}
   <h1>{{title}}</h1>
+  <div class="galerieCategories">
+  {% set categories = [] %}
+  {% for photo in collections.photographies %}
+    {% set currentCategory = photo.data.photoCategory %}
+    {% if currentCategory not in categories %}
+      <button id="{{ currentCategory }}" class="categoryButton">{{ currentCategory }}</button>
+      {% set categories = (categories.push(currentCategory), categories) %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  <div id="galerySlider">
+    
+  </div>
   {% include 'footer.njk' %}
 </main>
