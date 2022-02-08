@@ -15,6 +15,7 @@
   width: 90%;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .categoryButton {
@@ -32,4 +33,18 @@
 
 .categoryButton:hover {
   filter: brightness(0.8);
+}
+
+#galerySlider {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+#galerySlider > img {
+  border: 5px solid #99aab5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #99aab5;
 }

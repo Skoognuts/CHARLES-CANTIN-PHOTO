@@ -20,7 +20,9 @@ script: /css/galerie.js
   {% endfor %}
   </div>
   <div id="galerySlider">
-    
+    {% for photo in collections.photographies %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
   </div>
   {% include 'footer.njk' %}
 </main>
