@@ -8,10 +8,30 @@ style: /css/prestations.css
 <main id="prestations-content">
   {% include 'navbar.njk' %}
   <h1>{{title}}</h1>
-  <ul>
   {% for prestation in collections.prestations %}
-    <li>{{ prestation.data.prestationTitle | safe }}</li>
+    <div class="card d-md-none" style="width: 18rem;">
+      <img src="{{ prestation.data.prestationPreview | url }}" class="card-img-top" alt="{{ prestation.data.prestationTitle | safe }}">
+      <div class="card-body">
+        <h2 class="card-title">{{ prestation.data.prestationTitle | safe }}</h2>
+        <h3 class="card-text">( {{ prestation.data.prestationPrice | safe }} )</h3>
+        <p class="card-text">{{ prestation.data.prestationDescription | safe }}</p>
+      </div>
+    </div>
+
+    <div class="card mb-3 d-none d-md-flex">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{{ prestation.data.prestationPreview | url }}" class="img-fluid" alt="{{ prestation.data.prestationTitle | safe }}">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title">{{ prestation.data.prestationTitle | safe }}</h2>
+            <h3 class="card-text">( {{ prestation.data.prestationPrice | safe }} )</h3>
+            <p class="card-text">{{ prestation.data.prestationDescription | safe }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   {% endfor %}
-  </ul>
   {% include 'footer.njk' %}
 </main>

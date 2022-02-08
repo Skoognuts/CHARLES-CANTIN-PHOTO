@@ -4,7 +4,46 @@
   background: url(../assets/charles_cantin_background_darkened.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   justify-content: space-between;
   align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 1000px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  text-align: justify;
+  background: rgba(114, 137, 218, 0.5);
+  box-shadow: 0 0 10px #99aab5;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.img-fluid {
+  border-radius: 10px 0 0 10px;
+}
+
+.col-md-8 {
+  display: flex;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-shadow: 0 0 7px #ffffff;
+}
+
+h3 {
+  font-size: 0.8rem;
 }
