@@ -26,3 +26,6 @@ fields:
   config:
     maxSize: 1
   label: Photographie
+pages:
+- src/content/photographies/famille_01.md
+- src/content/photographies/grossesse_01.md
