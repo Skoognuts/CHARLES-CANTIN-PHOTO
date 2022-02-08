@@ -9,6 +9,16 @@
   align-items: center;
 }
 
+#prestations-content > p {
+  text-align: justify;
+  font-size: 0.8rem;
+  width: 90%;
+}
+
+.prestations-link {
+  margin-bottom: 35px;
+}
+
 .card {
   width: 90%;
   max-width: 1000px;
@@ -46,4 +56,10 @@ h2 {
 
 h3 {
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #prestations-content > p {
+    width: 50%;
+  }
 }

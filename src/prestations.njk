@@ -8,6 +8,8 @@ style: /css/prestations.css
 <main id="prestations-content">
   {% include 'navbar.njk' %}
   <h1>{{title}}</h1>
+  <p>Ces types de <em>séances de photos</em> peuvent vous donner une idée du budget à prévoir pour votre projet. Le prix comprend mon déplacement (dans un rayon de 100km), la <em>séance photo</em>, les <em>retouches</em> sur vos photos coup de coeur ainsi que leur tirages. Je dispose également d'un <em>studio de photo</em> qui vous est ouvert, vous permettant de choisir votre décors.</p>
+  <p class="prestations-link">Pour de plus amples informations ou pour toute demande de devis pour une <em>séance de photo</em>, merci de remplir mon <a href="/contact">formulaire de contact</a>. Je vous recontacterai rapidement.</p>
   {% for prestation in collections.prestations %}
     <div class="card d-md-none" style="width: 18rem;">
       <img src="{{ prestation.data.prestationPreview | url }}" class="card-img-top" alt="{{ prestation.data.prestationTitle | safe }}">
