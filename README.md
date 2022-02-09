@@ -15,3 +15,6 @@ Une fois le clonage effectué, vous devez installer les dépendances de l'applic
 
  **2. Se connecter au CMS :**
  Le CMS Forestry vous permet d'insérer automatiquement votre contenu au sein de l'application. Utilisez vos identifiants pour accéder à la plateforme et ajoutez vos contenus (Prestations ou Photographies).
+ 
+ **3. Contenu du dépôt :**
+ Le dépôt contient l'ensemble des scripts, templates, feuilles de styles nécessaires à l'application. Les Wireframes, les Mockups ainsi que la charte graphique se trouvent dans le dossier "UI Design".
