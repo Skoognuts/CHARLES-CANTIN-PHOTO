@@ -1,2 +1,17 @@
 # CHARLES CANTIN - Photographe
-## Evaluation STUDI Front-End.
+
+## Evaluation STUDI : Développer la partie Front-End d'une Application Web.
+
+Ce site a été réalisé grâce au CMS Forestry, au générateur de site statique Eleventy ainsi qu'au Framework CSS Bootstrap.
+
+**1. Déployer l'application en local :**
+Pour déployer cette application en local, vous devez au préalable cloner le dépôt Git dans un dossier créé à cet effet.
+
+    git clone https://github.com/Skoognuts/CHARLES-CANTIN-PHOTO.git
+
+Une fois le clonage effectué, vous devez installer les dépendances de l'application.
+
+    npm install
+
+ **2. Se connecter au CMS :**
+ Le CMS Forestry vous permet d'insérer automatiquement votre contenu au sein de l'application. Utilisez vos identifiants pour accéder à la plateforme et ajoutez vos contenus (Prestations ou Photographies).
