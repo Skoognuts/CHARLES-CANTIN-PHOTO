@@ -35,19 +35,32 @@
   filter: brightness(0.8);
 }
 
-#galerySlider {
+.galeryShow {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90%;
+  height: 100%;
   margin-bottom: 20px;
 }
 
-#galerySlider > img {
+.galeryShow > img {
   border: 5px solid #99aab5;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 0 10px #99aab5;
-  max-width: 100%;
-  width: auto;
+  max-width: 600px;
+  width: 90%;
   height: auto;
 }
+
+.galeryShow > #Baptême,
+.galeryShow > #Bébé,
+.galeryShow > #Couple,
+.galeryShow > #Famille,
+.galeryShow > #Grossesse,
+.galeryShow > #Mariage,
+.galeryShow > #Portrait {
+  display: none;
+}
+

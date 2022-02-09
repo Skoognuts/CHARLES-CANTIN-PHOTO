@@ -1,14 +1,17 @@
 const categoryButtons = document.getElementsByClassName('categoryButton');
-const galerySlider = document.getElementById('galerySlider');
+const galeriesShow = document.getElementsByClassName('galeryShow');
 const categoryButtonIds = [];
-
-if (!galerySlider.className) {
-  galerySlider.className = 'All';
-}
 
 for (let i = 0; i < categoryButtons.length; i++) {
   categoryButtonIds[i] = document.getElementById(categoryButtons[i].id);
   categoryButtonIds[i].addEventListener('click', () => {
-    galerySlider.className = categoryButtons[i].id;
+    hideSections(categoryButtons[i].id);
   })
+}
+
+const hideSections = (category) => {
+  for (let i = 0; i < galeriesShow.length; i++) {
+    galeriesShow[i].style.display = 'none';
+    galeriesShow[category].style.display = 'flex';
+  }
 }

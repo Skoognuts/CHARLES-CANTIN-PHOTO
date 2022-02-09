@@ -11,16 +11,52 @@ script: /css/galerie.js
   <h1>{{title}}</h1>
   <div class="galerieCategories">
   {% set categories = [] %}
-  {% for photo in collections.photographies %}
+  {% for photo in collections.photoAll %}
     {% set currentCategory = photo.data.photoCategory %}
     {% if currentCategory not in categories %}
       <button id="{{ currentCategory }}" class="categoryButton">{{ currentCategory }}</button>
       {% set categories = (categories.push(currentCategory), categories) %}
     {% endif %}
   {% endfor %}
+  <button id="All" class="categoryButton">Toutes</button>
   </div>
-  <div id="galerySlider">
-    {% for photo in collections.photographies %}
+  <div class="galeryShow" id="All">
+    {% for photo in collections.photoAll %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Baptême">
+    {% for photo in collections.photoBapteme %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Bébé">
+    {% for photo in collections.photoBebe %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Couple">
+    {% for photo in collections.photoCouple %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Famille">
+    {% for photo in collections.photoFamille %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Grossesse">
+    {% for photo in collections.photoGrossesse %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Mariage">
+    {% for photo in collections.photoMariage %}
+      <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
+    {% endfor %}
+  </div>
+  <div class="galeryShow" id="Portrait">
+    {% for photo in collections.photoPortrait %}
       <img src="{{ photo.data.photographie | url }}" alt="{{ photo.data.photoCategory | safe }}">
     {% endfor %}
   </div>
